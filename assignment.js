@@ -8,4 +8,8 @@ app.use('/', (req, res, next) => {
     next();
 });
 
+app.use('/users', (req, res) => {
+    console.log('The second middleware');
+    res.send('This get the client to users page');
+});
 
